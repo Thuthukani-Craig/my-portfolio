@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { FaArrowDown, FaCloud, FaShieldAlt } from "react-icons/fa";
-import BootTerminal from "../components/BootTerminal";
+import { FaArrowDown, FaShieldAlt } from "react-icons/fa";
+import CloudAiPlayground from "../components/CloudAiPlayground";
 import StatCard from "../components/StatCard";
 import { commandStats, profileLinks } from "../data/portfolio";
 
@@ -57,33 +57,7 @@ export default function Hero() {
         </motion.div>
       </motion.div>
 
-      <div className="hero-console">
-        <BootTerminal />
-        <motion.div
-          className="control-panel glass-panel"
-          initial={{ opacity: 0, y: 28 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1, duration: 0.6 }}
-        >
-          <div className="panel-heading">
-            <span>Live Control Panel</span>
-            <FaCloud />
-          </div>
-          <div className="radar">
-            <span />
-            <i />
-            <b />
-          </div>
-          <div className="telemetry-grid">
-            <span>Latency</span>
-            <strong>18ms</strong>
-            <span>Threats</span>
-            <strong>0</strong>
-            <span>Uptime</span>
-            <strong>99.9%</strong>
-          </div>
-        </motion.div>
-      </div>
+      <CloudAiPlayground />
 
       <div className="stats-grid">
         {commandStats.map((stat, index) => (
