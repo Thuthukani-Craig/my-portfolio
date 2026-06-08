@@ -23,7 +23,7 @@ export default function Hero() {
       <motion.div className="hero-copy" variants={container} initial="hidden" animate="visible">
         <motion.div className="status-pill" variants={item}>
           <FaShieldAlt />
-          <span>Access Level: Cloud Security Candidate</span>
+          <span>Computer Science Student | Front-End Developer | Cloud Enthusiast</span>
         </motion.div>
 
         <motion.h1 variants={item}>
@@ -32,8 +32,7 @@ export default function Hero() {
         </motion.h1>
 
         <motion.p className="hero-lede" variants={item}>
-          Futuristic cloud engineer portfolio dashboard for secure systems, automation,
-          DevOps workflows, and cyber-aware infrastructure thinking.
+          Practical portfolio for a student developer building responsive web apps, cloud-aware tools, and automation-driven workflows with React, JavaScript, and AWS.
         </motion.p>
 
         <motion.div className="hero-actions" variants={item}>

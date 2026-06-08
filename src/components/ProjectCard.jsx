@@ -24,6 +24,7 @@ export default function ProjectCard({ project, index }) {
           <FaExternalLinkAlt />
         </div>
         <p>{project.description}</p>
+        {project.status && <div className="project-status">{project.status}</div>}
         <div className="stack-list">
           {project.stack.map((tech) => (
             <span key={tech}>{tech}</span>

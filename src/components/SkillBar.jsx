@@ -14,13 +14,13 @@ export default function SkillBar({ skill, index }) {
       <div className="skill-label">
         <Icon />
         <span>{skill.name}</span>
-        <strong>{skill.level}%</strong>
+        <strong>{skill.experience}</strong>
       </div>
       <div className="skill-track">
         <motion.div
           className="skill-fill"
           initial={{ width: 0 }}
-          whileInView={{ width: `${skill.level}%` }}
+          whileInView={{ width: `${skill.strength}%` }}
           viewport={{ once: true, amount: 0.6 }}
           transition={{ duration: 1, delay: 0.15 + index * 0.06, ease: "easeOut" }}
         />

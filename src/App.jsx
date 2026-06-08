@@ -4,15 +4,17 @@ import Navbar from "./components/Navbar";
 import Hero from "./sections/Hero";
 import About from "./sections/About";
 import SkillsMatrix from "./sections/SkillsMatrix";
+import CurrentlyLearning from "./sections/CurrentlyLearning";
 import Roadmap from "./sections/Roadmap";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 
 const sections = [
-  { id: "home", label: "Command" },
+  { id: "home", label: "Home" },
   { id: "about", label: "About" },
-  { id: "skills", label: "Matrix" },
+  { id: "skills", label: "Skills" },
+  { id: "learning", label: "Learning" },
   { id: "roadmap", label: "Roadmap" },
   { id: "projects", label: "Projects" },
   { id: "contact", label: "Contact" },
@@ -50,6 +52,7 @@ export default function App() {
         <Hero />
         <About />
         <SkillsMatrix />
+        <CurrentlyLearning />
         <Roadmap />
         <Projects />
         <Contact />

@@ -138,13 +138,11 @@ a {
 .scanline-overlay {
   position: absolute;
   inset: 0;
-  background: repeating-linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.03) 0,
-    rgba(255, 255, 255, 0.03) 1px,
-    transparent 1px,
-    transparent 5px
-  );
+  background: repeating-linear-gradient(180deg,
+      rgba(255, 255, 255, 0.03) 0,
+      rgba(255, 255, 255, 0.03) 1px,
+      transparent 1px,
+      transparent 5px);
   mix-blend-mode: overlay;
   opacity: 0.35;
 }
@@ -229,9 +227,9 @@ main,
 .section-header span,
 .status-pill,
 .project-signal,
-.timeline-item > span,
-.about-story > span,
-.flagship-copy > span {
+.timeline-item>span,
+.about-story>span,
+.flagship-copy>span {
   color: var(--muted);
   font-size: 0.72rem;
   letter-spacing: 0.08em;
@@ -411,7 +409,7 @@ h1 span {
   gap: 0.75rem;
 }
 
-.playground-head > span,
+.playground-head>span,
 .accuracy-title {
   display: inline-flex;
   align-items: center;
@@ -757,7 +755,7 @@ h1 span {
 .stats-grid {
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1rem;
 }
 
@@ -873,18 +871,24 @@ h1 span {
 }
 
 .skills-grid,
-.projects-grid {
+.projects-grid,
+.learning-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
 }
 
 .skill-card,
-.project-card {
+.project-card,
+.learning-card {
   padding: 1.1rem;
 }
 
-.skill-card-head {
+.learning-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.learning-card-head {
   display: flex;
   align-items: center;
   gap: 0.8rem;
@@ -951,6 +955,38 @@ h1 span {
   color: #9db4c3;
   font-size: 0.78rem;
   line-height: 1.45;
+}
+
+.learning-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.learning-card {
+  display: grid;
+  gap: 1rem;
+}
+
+.learning-card-head {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.learning-card strong {
+  font-size: 1.1rem;
+}
+
+.project-status {
+  margin: 0.9rem 0 0;
+  padding: 0.55rem 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  background: rgba(118, 255, 143, 0.12);
+  color: var(--green);
+  font-size: 0.78rem;
+  font-weight: 700;
 }
 
 .timeline {
@@ -1359,26 +1395,31 @@ h1 span {
   from {
     background-position: 0 0;
   }
+
   to {
     background-position: 64px 64px;
   }
 }
 
 @keyframes matrixPulse {
+
   0%,
   100% {
     opacity: 0.22;
   }
+
   50% {
     opacity: 0.46;
   }
 }
 
 @keyframes blink {
+
   0%,
   45% {
     opacity: 1;
   }
+
   46%,
   100% {
     opacity: 0;
@@ -1392,10 +1433,12 @@ h1 span {
 }
 
 @keyframes floatCue {
+
   0%,
   100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(9px);
   }
@@ -1405,9 +1448,11 @@ h1 span {
   0% {
     text-shadow: 2px 0 var(--cyan), -2px 0 var(--danger);
   }
+
   50% {
     text-shadow: -2px 0 var(--green), 2px 0 var(--violet);
   }
+
   100% {
     text-shadow: 0 0 18px rgba(88, 243, 255, 0.24);
   }
@@ -1568,6 +1613,7 @@ h1 span {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {

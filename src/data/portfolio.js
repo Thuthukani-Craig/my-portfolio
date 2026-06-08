@@ -2,23 +2,24 @@ import {
   FaAws,
   FaCloud,
   FaCode,
+  FaCss3Alt,
   FaDocker,
   FaEnvelope,
   FaGithub,
   FaHandshake,
-  FaLinux,
+  FaHtml5,
   FaLinkedin,
   FaMapMarkerAlt,
-  FaNodeJs,
   FaPhoneAlt,
   FaPython,
+  FaReact,
   FaShieldAlt,
+  FaTools,
 } from "react-icons/fa";
-import { SiGooglecloud, SiKubernetes, SiTerraform } from "react-icons/si";
 
 export const profileLinks = [
-  { label: "GitHub", href: "https://github.com/", icon: FaGithub, variant: "cyan" },
-  { label: "LinkedIn", href: "https://www.linkedin.com/", icon: FaCloud, variant: "blue" },
+  { label: "GitHub", href: "https://github.com/Thuthukani-Craig", icon: FaGithub, variant: "cyan" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/thuthukani-makhathini-5891a3381/", icon: FaLinkedin, variant: "blue" },
   { label: "Download CV", href: "/Thuthukani-Makhathini-CV.pdf", icon: FaCode, variant: "green" },
 ];
 
@@ -31,9 +32,21 @@ export const contactCta = {
 export const contactDetails = [
   {
     label: "Email",
-    value: "ThuthukaniC@yahoo.com",
-    href: "mailto:ThuthukaniC@yahoo.com",
+    value: "meggmaintenance@gmail.com",
+    href: "mailto:meggmaintenance@gmail.com",
     icon: FaEnvelope,
+  },
+  {
+    label: "LinkedIn",
+    value: "linkedin.com/in/thuthukani-makhathini-5891a3381/",
+    href: "https://www.linkedin.com/in/thuthukani-makhathini-5891a3381/",
+    icon: FaLinkedin,
+  },
+  {
+    label: "GitHub",
+    value: "github.com/Thuthukani-Craig",
+    href: "https://github.com/Thuthukani-Craig",
+    icon: FaGithub,
   },
   {
     label: "Cell",
@@ -47,128 +60,139 @@ export const contactDetails = [
     href: null,
     icon: FaMapMarkerAlt,
   },
-  {
-    label: "LinkedIn",
-    value: "Connect professionally",
-    href: "https://www.linkedin.com/",
-    icon: FaLinkedin,
-  },
-  {
-    label: "GitHub",
-    value: "View code and projects",
-    href: "https://github.com/",
-    icon: FaGithub,
-  },
 ];
 
 export const about = {
   mission:
-    "I am building toward a career where secure cloud infrastructure is not treated as an afterthought, but as the foundation for reliable digital products.",
+    "Grow as a front-end developer by shipping responsive web applications, learning cloud platforms, and improving everyday user experiences.",
   bio:
-    "Thuthukani Makhathini is a student and emerging entrepreneur growing through hands-on labs, portfolio projects, and real-world problem solving. The journey blends software development, cloud operations, and cybersecurity curiosity into one practical mission: build systems that people can trust.",
-  values: ["Transparency", "Innovation", "Resilience"],
+    "Thuthukani Makhathini is a second-year Computer Science student focused on web development, cloud computing, and automation. I am building practical solutions like TenderPro while strengthening skills in JavaScript, React, Python, AWS, Azure, and DevOps.",
+  values: ["Transparency", "Learning", "Resilience"],
 };
 
 export const commandStats = [
-  { label: "Cloud Readiness", value: "91%", detail: "AWS, Azure, GCP foundation" },
-  { label: "Security Mode", value: "ON", detail: "IAM, Linux, network hardening" },
-  { label: "Deploy Target", value: "24/7", detail: "Automation-first delivery" },
+  {
+    label: "BSc Computer Science",
+    value: "Year 2",
+    detail: "Second-year student building a stronger software foundation.",
+  },
+  {
+    label: "Azure Fundamentals",
+    value: "Certified",
+    detail: "Certified in cloud fundamentals and Azure basics.",
+  },
+  {
+    label: "TenderPro",
+    value: "In Development",
+    detail: "Building a tender aggregation platform for South African opportunities.",
+  },
+  {
+    label: "Open To",
+    value: "Remote Opportunities",
+    detail: "Available for junior front-end and cloud roles.",
+  },
 ];
 
 export const skills = [
   {
-    group: "Cloud Platforms",
-    icon: FaCloud,
-    items: [
-      {
-        name: "AWS Core Services",
-        level: 88,
-        icon: FaAws,
-        note: "Based on completed labs, IAM practice, storage patterns, and deployment exercises.",
-      },
-      {
-        name: "Azure Operations",
-        level: 82,
-        icon: FaCloud,
-        note: "Based on portal labs, identity concepts, monitoring workflows, and cloud operations study.",
-      },
-      {
-        name: "GCP Fundamentals",
-        level: 70,
-        icon: SiGooglecloud,
-        note: "Based on platform fundamentals, compute/storage learning, and comparative cloud practice.",
-      },
-    ],
-  },
-  {
-    group: "Cybersecurity",
-    icon: FaShieldAlt,
-    items: [
-      {
-        name: "IAM & Access Control",
-        level: 84,
-        icon: FaShieldAlt,
-        note: "Based on least-privilege design, account security labs, and access review practice.",
-      },
-      {
-        name: "Linux Hardening",
-        level: 80,
-        icon: FaLinux,
-        note: "Based on shell usage, service configuration, permissions, and baseline security checks.",
-      },
-      {
-        name: "Network Defense",
-        level: 74,
-        icon: FaCloud,
-        note: "Based on subnetting, firewall rules, scanning awareness, and detection concepts.",
-      },
-    ],
-  },
-  {
-    group: "Engineering Stack",
+    group: "Front-End",
     icon: FaCode,
     items: [
       {
-        name: "Python Automation",
-        level: 82,
-        icon: FaPython,
-        note: "Based on scripting exercises, workflow automation, and backend learning projects.",
+        name: "HTML5",
+        experience: "Intermediate",
+        strength: 72,
+        icon: FaHtml5,
+        note: "Building responsive markup for portfolio pages and web apps.",
       },
       {
-        name: "Node.js APIs",
-        level: 72,
-        icon: FaNodeJs,
-        note: "Based on API practice, project scaffolding, package workflows, and debugging reps.",
+        name: "CSS3",
+        experience: "Intermediate",
+        strength: 70,
+        icon: FaCss3Alt,
+        note: "Styling modern interfaces with responsive layouts and animations.",
       },
       {
-        name: "React Interfaces",
-        level: 76,
+        name: "JavaScript",
+        experience: "Intermediate",
+        strength: 68,
         icon: FaCode,
-        note: "Based on responsive UI builds, component design, and interactive portfolio work.",
+        note: "Developing interactive web experiences with clean logic and tooling.",
+      },
+      {
+        name: "React",
+        experience: "Learning",
+        strength: 58,
+        icon: FaReact,
+        note: "Strengthening component-driven UI development and state handling.",
       },
     ],
   },
   {
-    group: "DevOps Systems",
-    icon: SiKubernetes,
+    group: "Cloud & DevOps",
+    icon: FaCloud,
     items: [
       {
-        name: "Docker Workflows",
-        level: 78,
+        name: "AWS",
+        experience: "Learning",
+        strength: 52,
+        icon: FaAws,
+        note: "Exploring AWS services, deployments, and cloud architecture.",
+      },
+      {
+        name: "Azure",
+        experience: "Hands-On",
+        strength: 78,
+        icon: FaCloud,
+        note: "Practicing Azure fundamentals, portal workflows, and cloud services.",
+      },
+      {
+        name: "Docker",
+        experience: "Learning",
+        strength: 56,
         icon: FaDocker,
-        note: "Based on container concepts, local builds, image workflows, and deployment planning.",
+        note: "Learning containerization for development and deployment consistency.",
       },
       {
-        name: "Kubernetes Concepts",
-        level: 67,
-        icon: SiKubernetes,
-        note: "Based on cluster architecture study, workload concepts, and orchestration labs.",
+        name: "Terraform",
+        experience: "Learning",
+        strength: 46,
+        icon: FaTools,
+        note: "Studying infrastructure-as-code for repeatable cloud environments.",
+      },
+    ],
+  },
+  {
+    group: "Tools & Workflow",
+    icon: FaTools,
+    items: [
+      {
+        name: "Git & GitHub",
+        experience: "Hands-On",
+        strength: 82,
+        icon: FaGithub,
+        note: "Managing source control, branches, and collaboration workflows.",
       },
       {
-        name: "Terraform IaC",
-        level: 71,
-        icon: SiTerraform,
-        note: "Based on infrastructure-as-code practice, variables, plans, and repeatable cloud setup.",
+        name: "Python",
+        experience: "Intermediate",
+        strength: 64,
+        icon: FaPython,
+        note: "Writing scripts and backend logic for automation and APIs.",
+      },
+      {
+        name: "FastAPI",
+        experience: "Learning",
+        strength: 48,
+        icon: FaCode,
+        note: "Building fast Python APIs for backend prototypes.",
+      },
+      {
+        name: "CI/CD Pipelines",
+        experience: "Learning",
+        strength: 52,
+        icon: FaCode,
+        note: "Automating testing and deployment for consistent delivery.",
       },
     ],
   },
@@ -204,27 +228,47 @@ export const roadmap = [
 
 export const projects = [
   {
-    title: "Cloud Sentinel Dashboard",
-    type: "Security telemetry",
+    title: "TenderPro",
+    type: "Tender aggregation platform",
     description:
-      "A flagship command-center concept for surfacing cloud alerts, identity risk, incident priority, and executive-ready security posture in one clean interface.",
-    stack: ["React", "AWS", "IAM", "Charts"],
-    href: "https://github.com/",
+      "Tender aggregation platform designed to collect, organize, and present South African tender opportunities.",
+    stack: ["React", "JavaScript", "Python"],
+    href: "https://github.com/Thuthukani-Craig",
     featured: true,
-    impact: "Designed to help teams spot account risk quickly, prioritize alerts, and explain cloud exposure without drowning in raw logs.",
+    impact:
+      "Building a practical solution to help buyers and suppliers track local tender opportunities.",
   },
   {
-    title: "DevOps Launchpad",
-    type: "Pipeline automation",
-    description: "Reusable deployment workflow concept with build checks, image publishing, and release gates.",
-    stack: ["Docker", "GitHub Actions", "Node", "Vite"],
-    href: "https://github.com/",
+    title: "Personal Portfolio",
+    type: "Developer portfolio",
+    description:
+      "Responsive developer portfolio showcasing projects, skills, and career progression.",
+    stack: ["React", "Vite", "Framer Motion"],
+    href: "https://github.com/Thuthukani-Craig",
   },
   {
-    title: "Zero Trust Lab",
-    type: "Cyber range",
-    description: "A learning lab for network segmentation, Linux services, access policy, and audit trails.",
-    stack: ["Linux", "Python", "Nmap", "SIEM"],
-    href: "https://github.com/",
+    title: "Weather Dashboard",
+    type: "Coming Soon",
+    description: "Responsive weather application consuming external APIs.",
+    stack: ["JavaScript", "APIs", "Responsive Design"],
+    href: "https://github.com/Thuthukani-Craig",
+    status: "Coming Soon",
   },
+  {
+    title: "Task Manager",
+    type: "Coming Soon",
+    description: "Task management application using JavaScript and browser storage.",
+    stack: ["JavaScript", "Browser Storage", "UI"],
+    href: "https://github.com/Thuthukani-Craig",
+    status: "Coming Soon",
+  },
+];
+
+export const currentLearning = [
+  { title: "AWS", description: "Diving into AWS services, deployment patterns, and cloud best practices." },
+  { title: "Docker", description: "Learning containerization and reproducible development environments." },
+  { title: "FastAPI", description: "Building lightweight Python APIs for backend prototypes." },
+  { title: "Terraform", description: "Studying infrastructure-as-code for repeatable cloud deployments." },
+  { title: "CI/CD Pipelines", description: "Automating test and deployment workflows for faster delivery." },
+  { title: "React", description: "Strengthening component-driven UI development and state management." },
 ];
